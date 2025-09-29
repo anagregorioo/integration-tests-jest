@@ -24,14 +24,14 @@
     "typescript": "^5.9.2"
   },
   "scripts": {
-    "clean": "rimraf ./output && mkdirp ./output",
-    "format": "prettier --write \"**/**.[jt]s?(x)\"",
-    "verify": "prettier --check \"**/**.[jt]s?(x)\"",
-    "eslint": "eslint \"**/**.[jt]s?(x)\" -o output/eslint.html -f html",
-    "scenario": "jest serve_rest.spec.ts --config ./jest.config.js",
-    "test": "jest --config ./jest.config.js",
-    "ci": "npm run clean && npm run format && npm run verify && npm run eslint && npm run test"
-  },
+  "clean": "rimraf ./output && mkdirp ./output",
+  "format": "prettier --write \"**/**.[jt]s?(x)\"",
+  "verify": "prettier --check \"**/**.[jt]s?(x)\"",
+  "eslint": "eslint \"**/**.[jt]s?(x)\" -o output/eslint.html -f html",
+  "scenario": "jest serve_rest.spec.ts --config ./jest.config.js",
+  "test": "jest --config ./jest.config.js",
+  "ci": "npm run clean && npm run format && npm run verify && npm run eslint && npm run test"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ugioni/integration-tests-jest.git"
